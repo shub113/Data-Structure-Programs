@@ -10,7 +10,7 @@ import com.bridgeit.DataStructurePrograms.Utility.HashFunction;
 /**
  * @author bridgeit
  *		file used is text5
- *		savig output to text8
+ *		
  */
 public class HashingFunction {
 	public static void main(String[]args) throws IOException{
@@ -27,9 +27,12 @@ public class HashingFunction {
 		}catch(NumberFormatException e){
 			System.out.println(e);
 		}
-		
 		System.out.println("Enter number to search");
-		int num= scan.nextInt();
-		hash.search(numbers, num);
+		try{
+			int num= scan.nextInt();
+			hash.search(numbers, num);
+		}catch(Exception e){
+			e.printStackTrace();
+		}
 	}
 }

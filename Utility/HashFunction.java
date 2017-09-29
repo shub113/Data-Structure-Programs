@@ -5,7 +5,12 @@ import java.util.Collections;
 import java.util.LinkedList;
 
 public class HashFunction {
-	public static void search(int[] numbers,int num) {
+	
+	/**
+	 * @param numbers
+	 * @param num
+	 */
+	public void search(int[] numbers,int num) {
 		ArrayList<LinkedList<Integer>> slot=new ArrayList<LinkedList<Integer>>();
 		for(int i=0;i<11;i++) {
 			slot.add(new LinkedList<Integer>());
