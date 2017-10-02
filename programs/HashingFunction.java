@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 import com.bridgeit.DataStructurePrograms.Utility.FileReadWrite;
 import com.bridgeit.DataStructurePrograms.Utility.HashFunction;
+import com.bridgeit.DataStructurePrograms.Utility.HashFunction2;
 
 
 /**
@@ -14,7 +15,7 @@ import com.bridgeit.DataStructurePrograms.Utility.HashFunction;
  */
 public class HashingFunction {
 	public static void main(String[]args) throws IOException{
-		HashFunction hash= new HashFunction();
+		HashFunction2 hash= new HashFunction2();
 		FileReadWrite file= new FileReadWrite();
 		Scanner scan= new Scanner(System.in);
 		
