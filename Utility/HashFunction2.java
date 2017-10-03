@@ -1,5 +1,6 @@
 package com.bridgeit.DataStructurePrograms.Utility;
 
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.LinkedList;
@@ -15,15 +16,24 @@ public class HashFunction2 {
 		for(int number:numbers){
 			map.get(number%11).add(number);
 		}
+		for(int i=0;i<11;i++){
+			System.out.println(map.get(i));
+		}
 		try{
 			LinkedList<Integer> list= map.get(num%11);
-			if(list==null){
+			System.out.println(list);
+			if(list.size()==0){
 				System.out.println("Number not found");
 				map.put(num%11, new LinkedList<Integer>());
 				map.get(num%11).add(num);
 			}else{
 				LinkedList<Integer> list1= map.get(num%11);
+				System.out.println(list1);
 				Integer[] array=list1.toArray(new Integer[list1.size()]);
+				Arrays.sort(array);
+				for(int i:array){
+					System.out.print(i+"\t");
+				}
 				if(utility.binarySearch(array, num)){
 					System.out.println("Found");
 					//list1.remove(num);

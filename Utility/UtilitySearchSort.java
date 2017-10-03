@@ -4,10 +4,10 @@ public class UtilitySearchSort {
 	//Generic Binary search
 	public <T extends Comparable<T>> boolean binarySearch(T[] num, T x){
 		int l=0;
-        int u=num.length;
+        int u=num.length-1;
         while(u>=l){
             int mid=(u+l)/2;
-            if(num[mid]==x){
+            if(num[mid].equals(x)){
                 return true;
                 }
             else if(num[mid].compareTo(x)>0)

@@ -1,4 +1,4 @@
-package OrderedLinkedList;
+package com.bridgeit.DataStructurePrograms.programs;
 import java.util.*;
 import java.io.*;
 
